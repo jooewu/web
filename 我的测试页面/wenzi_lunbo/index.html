@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--#以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。-->
+    <title>欢迎访问培洛科技</title>
+
+    <link href="icon/icon.ico" rel="shortcut icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/animate2.css" rel="stylesheet">
+    <link href="css/photo.css" rel="stylesheet">
+    <link href="css/animate-photo.css" rel="stylesheet">
+    <link href="css/animatedresponsiveImagegrid.css" rel="stylesheet">
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/index.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!--<script src="js/jquery.countTo.js"></script>-->
+    <script src="js/jquery.gridrotator.js" type="text/javascript"></script>
+    <%--<script src="js/main.js"></script>--%>
+    <script type="text/javascript" src="js/jquery.countUp.js"></script>
+    <script src="js/jquery.imgscroll.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            imgScroll.rolling({
+                name: 'g1',
+                width: '500px',
+                height: '354px',
+                direction: 'top',
+                speed: 10,
+                addcss: true
+            });
+
+            imgScroll.rolling({
+                name: 'g2',
+                width: '500px',
+                height: '354px',
+                direction: 'left',
+                speed: 20,
+                addcss: true
+            });
+
+            imgScroll.rolling({
+                name: 'g3',
+                width: '500px',
+                height: '354px',
+                direction: 'bottom',
+                speed: 30,
+                addcss: true
+            });
+
+            imgScroll.rolling({
+                name: 'g4',
+                width: '500px',
+                height: '354px',
+                direction: 'right',
+                speed: 40,
+                addcss: true
+            });
+
+        })
+    </script>
+</head>
+<body>
+	<!--nav  start-->
+            <div class="navbar-example">
+            </div>
+            <!--nav end-->
+            <!--container strat-->
+            <div class="full-page">
+                <div class="page-container">
+                    <div class="page-banner">
+                        <div class="container">
+                            <div class="col-md-6">
+                                <div class="banner-word">
+                                    <div class="banner-inner">
+                                        <h1 class="banner-h1">不用老师，高效学习</h1>
+                                        <h2 class="banner-h2">培洛科技，不一样的学习方法...</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        var isiPad = function () {
+                            return (navigator.platform.indexOf("iPad") != -1);
+                        };
+
+                        var isiPhone = function () {
+                            return (
+                                (navigator.platform.indexOf("iPhone") != -1) ||
+                                (navigator.platform.indexOf("iPod") != -1)
+                            );
+                        };
+
+                        var fullHeight = function () {
+                            if (!isiPad() || !isiPhone()) {
+                                $('.page-banner').css('height', $(window).height() - $('.fix-header').height());
+                                $(window).resize(function () {
+                                    $('.page-banner').css('height', $(window).height() - $('.fix-header').height());
+                                })
+                            }
+                        };
+
+                        fullHeight();
+                    </script>
+
+                    <div class="page-content">
+                        <div class="container">
+                            <div class="col-md-6 col-md-offset-3 headering">
+                                <h2 class="Cp-h2" style="color: black">我们的产品特性</h2>
+                            </div>
+                            <div class="function">
+                                <dl class="lt">
+                                    <span>纸质书写体验</span>
+                                    <!--<dd>只需一键扫描！快速、全面地诊断系统安全状况<br />和健康程度，并进行精准修复！</dd>-->
+                                </dl>
+                                <dl class="rt">
+                                    <dt>立体解答</dt>
+                                    <!--<dd>全新设计的产品界面，更加清爽、简洁。<br />炫酷的换肤效果，让您拥有百变杀毒！</dd>-->
+                                </dl>
+                                <dl class="lb">
+                                    <dt>高校规划</dt>
+                                    <!--<dd>软件弹窗？浏览器弹窗？网页广告？超强广告拦截<br />帮您通通搞定！</dd>-->
+                                </dl>
+                                <dl class="rb">
+                                    <dt>学习监督</dt>
+                                    <!--<dd>零广告、零打扰、零胁迫，我们一直坚持<br />只做杀毒！</dd>-->
+                                </dl>
+                                <div class="circle-outer"></div>
+                                <div class="circle-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-player">
+                        <div class="w-video">
+                            <a href="javascript:;" title="观看视频">
+                                <i class="icon-play2"></i>
+                            </a>
+                            <!--<span>观看视频</span>-->
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <div class="pleft">
+                            <div class="pcontent">
+                                <h2>学习场景</h2>
+                                <ol>
+                                    <li>独立学习</li>
+                                    <li>家长助手</li>
+                                    <li>机械辅助</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="pright">
+                            <div class="mains">
+                                <div class="g1">
+                                    <ul>
+                                        <li>
+                                            <img src="images/c-1.JPG"></li>
+                                        <li>
+                                            <img src="images/c-10.JPG"></li>
+                                        <li>
+                                            <img src="images/c-11.JPG"></li>
+                                        <li>
+                                            <img src="images/c-12.JPG"></li>
+                                        <li>
+                                            <img src="images/c-13.JPG"></li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="g2">
+                                    <ul>
+                                        <li>
+                                            <img src="images/c-14.JPG"></li>
+                                        <li>
+                                            <img src="images/c-15.JPG"></li>
+                                        <li>
+                                            <img src="images/c-2.JPG"></li>
+                                        <li>
+                                            <img src="images/c-3.JPG"></li>
+                                        <li>
+                                            <img src="images/c-4.JPG"></li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="g3">
+                                    <ul>
+                                        <li>
+                                            <img src="images/c-5.JPG"></li>
+                                        <li>
+                                            <img src="images/c-8.JPG"></li>
+                                        <li>
+                                            <img src="images/c-7.JPG"></li>
+                                        <li>
+                                            <img src="images/c-9.JPG"></li>
+                                        <li>
+                                            <img src="images/c-6.JPG"></li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="g4">
+                                    <ul>
+                                        <li>
+                                            <img src="images/s-1.JPG"></li>
+                                        <li>
+                                            <img src="images/s-2.JPG"></li>
+                                        <li>
+                                            <img src="images/s-3.JPG"></li>
+                                        <li>
+                                            <img src="images/s-4.JPG"></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-count">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 txt-cen animate-box fadeInUp animated">
+                                <div class="count-heading">
+                                    <h2 class="count-h2" style="color: black">数据共享</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 txt-cen">
+                            <div class="timer set-style">446</div>
+                            <p class="count-label">学生人数</p>
+                        </div>
+                        <div class="col-md-4 txt-cen">
+                            <div class="timer set-style">500000</div>
+                            <span class="count-label">合作机构</span>
+                        </div>
+                        <div class="col-md-4 txt-cen">
+                            <div class="timer set-style">1000000</div>
+                            <span class="count-label">题库数量</span>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="copy-right">
+                            Copyright &copy; 2016.Baconlocke All rights reserved.
+						<a target="_blank" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" style="color: #999;">培洛科技&nbsp;&nbsp;&nbsp;苏ICP备16037756号
+                        </a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <!--container end-->
+
+            <script type="text/javascript">
+                $(function () {
+
+                    $('#ri-grid').gridrotator({
+                        rows: 2,
+                        // number of columns
+                        columns: 2,
+                        w1024: {
+                            rows: 2,
+                            columns: 2
+                        },
+                        w768: {
+                            rows: 2,
+                            columns: 2
+                        },
+                        w480: {
+                            rows: 2,
+                            columns: 2
+                        },
+                        w320: {
+                            rows: 2,
+                            columns: 2
+                        },
+                        w240: {
+                            rows: 2,
+                            columns: 2
+                        },
+                        preventClick: false
+                    });
+
+                });
+            </script>
+</body>
+</html>
+<script>
+    $(".icon-play2").click(function () {
+        $("body").load("video1.html");
+    })
+    $(".navbar-example").load("fix-header.html");
+    jQuery(function ($) {
+
+        var pageCount_hei = $(".page-count").offset().top;
+        //			alert(window_Offhei);
+        //			alert(pageCount_hei);
+        $(window).scroll(function () {
+            if ($(document).scrollTop() >= $(document).height() - $(window).height()) {
+                $(".timer").countTo({
+                    from: 0, // 开始时的数字
+                    speed: 3000, // 总时间
+                    refreshInterval: 100, // 刷新一次的时间
+                    beforeSize: 0, //小数点前最小显示位数，不足的话用0代替 
+                    decimals: 0, // 小数点后的位数，小数做四舍五入
+                    onUpdate: function () { }, // 更新时回调函数
+                    onComplete: function () {
+                        for (i in arguments) {
+                            //console.log(arguments[i]);
+                        }
+                    }
+                });
+            }
+
+        })
+
+    });
+</script>
